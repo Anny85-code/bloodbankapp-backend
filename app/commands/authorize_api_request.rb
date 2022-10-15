@@ -2,7 +2,7 @@ class AuthorizeApiRequest
   prepend SimpleCommand
 
   def initialize(headers = {})
-    @header = headers
+    @headers = headers
   end
 
   def call 
@@ -11,7 +11,7 @@ class AuthorizeApiRequest
 
   private 
 
-  attr_reader :header 
+  attr_reader :headers 
 
   def user 
     @user ||= User.find(decoded_auth_token[:user_id]) if decoded_auth_token
