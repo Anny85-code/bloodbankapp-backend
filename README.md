@@ -1,5 +1,7 @@
 # BLOODBANKAPP-API
 
+This is an api for a bloodbank application, it contains endpoints for the front end application in JSON format
+
 
 ## Install
 
@@ -45,8 +47,8 @@ rails db:create db:migrate db:seed
 Using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli):
 
 ```shell
-heroku git:remote -a project
-heroku git:remote --remote heroku-staging -a project-staging
+heroku git:remote -a bloodbank-backend
+heroku git:remote --remote heroku-staging -a bloodbank-backend-staging
 ```
 
 ## Server
